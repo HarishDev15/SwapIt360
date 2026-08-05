@@ -11,24 +11,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="min-h-screen flex flex-col justify-between bg-slate-50 text-slate-900">
+<body class="min-h-screen flex flex-col justify-between">
 
-    <!-- Navbar Container -->
-    <div id="navbar-container"></div>
+    <div id="root"></div>
 
-    <!-- Main Content (Dynamic Views) -->
-    <main id="app" class="flex-grow"></main>
+    <!-- React & ReactDOM CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <!-- React Router & React Router DOM UMD CDN -->
+    <script crossorigin src="https://unpkg.com/history@5/umd/history.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-router@6.3.0/umd/react-router.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-router-dom@6.3.0/umd/react-router-dom.production.min.js"></script>
 
-    <!-- Footer Container -->
-    <div id="footer-container"></div>
+    <!-- Babel Standalone for in-browser JSX compilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <!-- Toast Container -->
-    <div id="toast-container" class="fixed bottom-6 right-6 z-50 flex flex-col space-y-2"></div>
-
-    <!-- Modal Container -->
-    <div id="modal-container"></div>
-
-    <!-- Main JS Application -->
-    <script src="js/main.js"></script>
+    <script type="text/babel" src="js/app.jsx"></script>
 </body>
 </html>
