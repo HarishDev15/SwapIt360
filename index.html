@@ -1,14 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SwapIt360 – India's Student Marketplace</title>
+    <meta name="description" content="India's Student Marketplace for Buying, Selling, Renting and Exchanging College Essentials.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen flex flex-col justify-between bg-slate-50 text-slate-900">
+
+    <!-- Navbar Container -->
+    <div id="navbar-container"></div>
+
+    <!-- Main Content (Dynamic Views) -->
+    <main id="app" class="flex-grow"></main>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="fixed bottom-6 right-6 z-50 flex flex-col space-y-2"></div>
+
+    <!-- Modal Container -->
+    <div id="modal-container"></div>
+
+    <!-- Main JS Application -->
+    <script src="js/main.js"></script>
+</body>
 </html>
